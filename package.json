@@ -1,0 +1,18 @@
+{
+  "name": "ts_pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "browserify dist/ConstEnum.js dist/Utils.js dist/index.js -o ./dist/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.8",
+    "browserify": "^17.0.0",
+    "typescript": "^5.3.3"
+  }
+}
