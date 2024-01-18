@@ -109,3 +109,19 @@ index.showView();
 > module不设置，或者设置成es6，会有如下报错
 >
 > ParseError: 'import' and 'export' may appear only with 'sourceType: module'
+
+## package.json
+
+此文件的 `type` 字段，默认是 `commonjs` 格式。
+
+值为 `module` 则以es模块处理；值为 `commonjs` 则以commonjs模块处理。
+
+无论 `type` 字段为何值，`.mjs` 的文件都按照es模块处理，`.cjs` 的文件都安装commonjs模块处理。所以一般都建议明确 `type` 字段的值。
+
+## rollup
+
+rollup打包默认以 es模块 处理。rollup命令无需声明type字段，但是配置rollup.config.js则需要生命type字段为module。
+
+如果 package.json 的 type 字段不声明，默认是 commonjs模块 处理。
+
+但是rollup配置打包就会出问题。所以需要显示声明type字段为 `module`。

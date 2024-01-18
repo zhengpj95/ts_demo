@@ -12,9 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^20.10.8",
     "browserify": "^17.0.0",
     "rollup": "^4.9.5",
+    "tslib": "^2.6.2",
     "typescript": "^5.3.3"
-  }
+  },
+  "type": "module"
 }
