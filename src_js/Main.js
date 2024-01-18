@@ -1,6 +1,6 @@
 import {MathUtils} from "./MathUtils";
 
-class Main {
+export class Main {
 	constructor() {
 	}
 
@@ -16,5 +16,5 @@ class Main {
 	}
 }
 
-export const main = new Main(); // 导出实例
-main.onShow();
+// export const main = new Main(); // 导出实例
+// main.onShow();
