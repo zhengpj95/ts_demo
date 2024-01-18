@@ -1,19 +1,19 @@
-import {MathUtils} from "./MathUtils";
+import {MathUtils} from "./base/MathUtils";
 
 export class Main {
-	constructor() {
-	}
+    constructor() {
+    }
 
-	onShow() {
-		console.log(`Main.onShow......`);
-		this.onShowRandom();
-	}
+    onShow() {
+        console.log(`Main.onShow......`);
+        this.onShowRandom();
+    }
 
-	onShowRandom() {
-		const val = MathUtils.random(1, 10);
-		const val1 = MathUtils.randomNumber(1, 10);
-		console.log("Main.onShowRandom......", val, val1);
-	}
+    onShowRandom() {
+        const val = MathUtils.random(1, 10);
+        const val1 = MathUtils.randomNumber(1, 10);
+        console.log("Main.onShowRandom......", val, val1);
+    }
 }
 
 // export const main = new Main(); // 导出实例

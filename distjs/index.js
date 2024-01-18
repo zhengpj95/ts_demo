@@ -27,31 +27,31 @@
      * MathUtils
      */
     class MathUtils {
-    	/**随机整数*/
-    	static randomNumber(min, max) {
-    		return Math.floor(Math.random() * (max - min + 1)) + min;
-    	}
+        /**随机整数*/
+        static randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
 
-    	/**(min,max]随机数*/
-    	static random(min, max) {
-    		return Math.random() * (max - min + 1) + min;
-    	}
+        /**(min,max]随机数*/
+        static random(min, max) {
+            return Math.random() * (max - min + 1) + min;
+        }
     }
 
     class Main {
-    	constructor() {
-    	}
+        constructor() {
+        }
 
-    	onShow() {
-    		console.log(`Main.onShow......`);
-    		this.onShowRandom();
-    	}
+        onShow() {
+            console.log(`Main.onShow......`);
+            this.onShowRandom();
+        }
 
-    	onShowRandom() {
-    		const val = MathUtils.random(1, 10);
-    		const val1 = MathUtils.randomNumber(1, 10);
-    		console.log("Main.onShowRandom......", val, val1);
-    	}
+        onShowRandom() {
+            const val = MathUtils.random(1, 10);
+            const val1 = MathUtils.randomNumber(1, 10);
+            console.log("Main.onShowRandom......", val, val1);
+        }
     }
 
     // export const main = new Main(); // 导出实例

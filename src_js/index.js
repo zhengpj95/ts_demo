@@ -1,15 +1,14 @@
-
 import {Pool} from "./base/Pool";
 import {SingletonClass} from "./base/SingletonClass";
 import {Main} from "./Main";
 
-export let module1 = {}
+export let module1 = {};
 
 class Module {
     constructor() {
-        regClass(Pool)
-        regClass(SingletonClass)
-        regClass(Main)
+        regClass(Pool);
+        regClass(SingletonClass);
+        regClass(Main);
     }
 }
 

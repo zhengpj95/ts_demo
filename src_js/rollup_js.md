@@ -17,3 +17,6 @@ rollup .\src_js\Main.js --file ./distjs/main.js --format iife
 ```shell
 rollup .\src_js\Main.js --file ./distjs/main.js --format umd --name main
 ```
+
+在模块内，通过index.js引入所有的js文件，那么只要对这个index.js文件进行rollup打包，就会把模块内的所有js文件打包成一个js文件了。
+这样的处理方式，可以处理成每个文件夹都是一个模块，然后也打包成一个模块。
