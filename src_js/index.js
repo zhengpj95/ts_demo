@@ -23,3 +23,5 @@
 export * from "./base/Pool.js";
 export * from "./base/SingletonClass.js";
 export * from "./Main.js";
+
+console.log(`11111 distjs`);

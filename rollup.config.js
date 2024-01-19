@@ -4,7 +4,7 @@
 // export default {
 //     input: './src_js/index.js',
 //     output: {
-//         file: './distjs/index1.js',
+//         file: './distjs/index.iife.js',
 //         format: 'iife',
 //         name: "main1"
 //     }
@@ -18,23 +18,19 @@
 // export default {
 //     input: "./src_js/index.js",
 //     output: {
-//         file: "./distjs/index.cjs",
+//         file: "./distjs/index.cjs.js",
 //         format: "cjs"
 //     }
 // };
 
-
-import typescript from "@rollup/plugin-typescript";
-
 /**
- * 把typescript打包，需要npm安装 @rollup/plugin-typescript 和 tslib
+ * 打包成umd格式，可以有name属性，有的话就可以在浏览器通过name值获取使用
  */
 export default {
-    input: "./src/index.ts",
+    input: './src_js/index.js',
     output: {
-        file: "./dist/index.js",
+        file: './distjs/index.umd.js',
         format: 'umd',
         name: "main"
-    },
-    plugins: [typescript({compilerOptions: {lib: ["es5", "es6", "dom"], target: "es2020"}})]
+    }
 };

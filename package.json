@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsc --build",
     "start": "browserify dist/ConstEnum.js dist/Utils.js dist/index.js -o ./dist/bundle.js",
-    "rollupjs": "rollup ./src_js/index.js --file ./distjs/index.js --format umd --name main"
+    "rollup": "rollup ./src_js/index.js --file ./distjs/index.js --format umd --name main",
+    "rollupts": "rollup --config rollup.config.ts.js",
+    "rollupjs": "rollup --config rollup.config.js"
   },
   "keywords": [],
   "author": "",
