@@ -120,7 +120,7 @@ index.showView();
 
 ## rollup
 
-rollup打包默认以 es模块 处理。rollup命令无需声明type字段，但是配置rollup.config.js则需要生命type字段为module。
+rollup打包默认以 es模块 处理。rollup命令无需声明type字段，但是配置rollup.config.js则需要声明type字段为module。
 
 如果 package.json 的 type 字段不声明，默认是 commonjs模块 处理。
 
